@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>True VFX Chat</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+</head>
+<body>
+    <h1>True VFX Chat</h1>
+    <p>Chat with your friends!</p>
+    <form  action="{{ url_for('chat_vfx') }}" method="post">
+        <p><input type="text" width="200" name="question" id="question"></p>
+        <p><input type="submit" value="Chat" /></p>
+        <p>{{ answer }}</p>
+    </form>
+</body>
+</html>
