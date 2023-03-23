@@ -16,7 +16,7 @@ import openai
 import numpy as np
 from openai.embeddings_utils import distances_from_embeddings, cosine_similarity
 
-openai.api_key = "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"
+openai.api_key = os.environ.get("API_KEY")
 # Regex pattern to match a URL
 HTTP_URL_PATTERN = r'^http[s]*://.+'
 
