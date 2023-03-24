@@ -8,10 +8,9 @@
 </head>
 <body>
     <h1>True VFX Chat</h1>
-    <p>Type your question below</p>
     <form  action="{{ url_for('chat_vfx') }}" method="post">
-        <p><input type="text" width="200" name="question" id="question"></p>
-        <p><input type="submit" value="Chat" /></p>
+        <p><textarea rows="5" name="question" id="question" class="form-control form-control-lg">Ask me a question</textarea></p>
+        <p><input type="submit" value="Chat" class="btn btn-outline-info" /></p>
         <p>{{ answer }}</p>
     </form>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
