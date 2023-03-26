@@ -21,8 +21,8 @@ openai.api_key = os.environ.get("API_KEY")
 HTTP_URL_PATTERN = r'^http[s]*://.+'
 
 # Define root domain to crawl
-domain = "docs.true-vfx.xyz"
-full_url = "https://docs.true-vfx.xyz/"
+domain = "https://truevfx-zjix5ra3ta-nw.a.run.app/"
+full_url = "https://truevfx-zjix5ra3ta-nw.a.run.app/Documetation"
 
 
 # Create a class to parse the HTML and get the hyperlinks
@@ -379,6 +379,7 @@ def answer_question(
     except Exception as e:
         print(e)
         return ""
+
 
 def get_answer(question):
     return answer_question(question=question)
