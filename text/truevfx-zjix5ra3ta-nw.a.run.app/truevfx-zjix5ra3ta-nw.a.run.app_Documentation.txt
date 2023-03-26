@@ -1,0 +1,29 @@
+
+
+
+
+Adding Kitbash Assets using True Assets
+
+
+Creating Kitbash (Including KB3D) Assets
+To install Kitbash 3D Assets using True Assets, you first need to go to True Assets and choose the "Create Assets
+    From Directory" option. This will allow you to choose the directory where your Kitbash Assets are located. This
+    could be a folder with a single collection of assets or a folder containing multiple folders of assets.
+This will open a dialogue box where your first task is to locate the folder where your Kitbash Assets are located and
+    select the folder containing your blend file and textures.
+If you are importing official Kitbash 3D (KB3D) assets, click the button in the dialogue box that says "Kitbash
+    Assets". Above that is a button that says "Move Origin to Bottom". Make sure this is ticked. Also, ensure that
+    "Join", "Apply Roatation", "Clear Parent", "Change Displacement Type", and "Remove Subsurf Modifiers" are also
+    ticked. These options make it easier and more efficient to work with Kitbash 3D assets inside Blender.
+Then uncheck "Node Groups", "Worlds", and "Materials", as these will not be needed to use the Kitbash assets.
+For Thumbnail Shading, you will get the best results from "Cycles", though if you are worried about performance, you
+    could choose "Eevee". However, as these are only 256 x 256 icons you will not notice a lot of difference. For the
+    Camera Angle choose "Isometric".
+To set up the name for the Catalog System, you can choose to either use the filename of the Blend File or create a
+    new name for this catalogue.
+Finally, click "Create Assets From Directory" at the bottom of the dialogue box.
+Once True Assets Browser has finished processing the file, you will need to click the refresh button, and then you
+    should see all of the assets in the asset browser.
+For more detailed information, please see the interactive guide located at
+    https://docs.true-vfx.xyz/docs/creating-kitbash-assets.
+
