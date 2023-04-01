@@ -1,18 +1,24 @@
 <html>
 <head>
     <title>True VFX Chat</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="Content-Style-Type" content="text/css" />
-    <meta http-equiv="Content-Script-Type" content="text/javascript" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Style-Type" content="text/css"/>
+    <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <h1>True VFX Chat</h1>
-    <form  action="{{ url_for('chat_vfx') }}" method="post">
-        <p><textarea rows="5" name="question" id="question" class="form-control form-control-lg">Ask me a question</textarea></p>
-        <p><input type="submit" value="Chat" class="btn btn-outline-info" /></p>
-        <p>{{ answer }}</p>
-    </form>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+<h1>True VFX Chat</h1>
+<form action="{{ url_for('train_model') }}" method="post">
+    <p><input type="submit" value="Train Model" class="btn btn-outline-info"/></p>
+</form>
+<form action="{{ url_for('chat_vfx') }}" method="post">
+    <p><textarea rows="5" name="question" id="question"
+                 class="form-control form-control-lg">Ask me a question</textarea></p>
+    <p><input type="submit" value="Chat" class="btn btn-outline-info"/></p>
+    <p>{{ answer }}</p>
+</form>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </body>
 </html>

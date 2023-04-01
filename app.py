@@ -8,8 +8,8 @@ app = Flask(__name__)
 def chat_vfx():
     if request.method == 'POST':
         question = request.form.get('question', '')
-        import chatBot
-        answer = chatBot.get_answer(question)
+        from chatBot.get_answer import get_answer
+        answer = get_answer(question)
     else:
         answer = ''
     return render_template('index.html', answer=answer)
@@ -18,6 +18,13 @@ def chat_vfx():
 @app.route("/Documentation", methods=['GET', 'POST'])
 def documentation():
     return render_template('Kitbash.html')
+
+
+@app.route("/train_model", methods=['GET', 'POST'])
+def train_model():
+    from chatBot.create_embeddings import train_model
+    train_model()
+    return render_template('index.html')
 
 
 # Run the app :)

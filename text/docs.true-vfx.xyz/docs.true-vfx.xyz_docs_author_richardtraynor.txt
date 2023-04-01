@@ -176,7 +176,7 @@ Back to article
 
 
 
-                                    Create Assets from FBX
+                                    Create Assets from OBJ
                                 
 09 Feb 2023
 
@@ -184,7 +184,7 @@ Back to article
 
 
 
-                                    Create Assets from OBJ
+                                    Create Assets from FBX
                                 
 09 Feb 2023
 
@@ -224,7 +224,7 @@ Back to article
 
 
 
-                                    Creating Kitbash Assets
+                                    Creating Materials
                                 
 08 Feb 2023
 
@@ -232,7 +232,7 @@ Back to article
 
 
 
-                                    Creating Materials
+                                    Creating Kitbash Assets
                                 
 08 Feb 2023
 
